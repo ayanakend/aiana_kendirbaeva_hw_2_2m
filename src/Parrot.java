@@ -12,7 +12,8 @@ public class Parrot extends Pet implements Printable{
 
     @Override
     public void print() {
-        System.out.println("Name: " + getName()+
+        System.out.println("Parrot: " +
+                "\nName: " + getName()+
                 "\nAge: " + getAge()+
                 "\nColor: " + color
         );

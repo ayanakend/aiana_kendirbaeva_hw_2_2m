@@ -12,7 +12,8 @@ public class Hamster extends Pet implements Printable{
 
     @Override
     public void print() {
-        System.out.println("Name: " + getName()+
+        System.out.println("Hamster:" +
+                "\nName: " + getName()+
                 "\nAge: " + getAge()+
                 "\nSex: " + sex);
     }

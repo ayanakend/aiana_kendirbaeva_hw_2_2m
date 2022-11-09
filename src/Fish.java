@@ -12,7 +12,8 @@ public class Fish extends Pet implements Printable{
 
     @Override
     public void print() {
-        System.out.println("Name: " + getName()+
+        System.out.println("Fish: " +
+                "\nName: " + getName()+
                 "\nAge: " + getAge()+
                 "\nSpecies: " + species
         );

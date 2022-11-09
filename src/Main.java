@@ -1,4 +1,7 @@
 public class Main {
+    public static String className(){
+        return className();
+    }
     public static void main(String[] args) {
         Circle circle = new Circle("circle", 5);
         Square square = new Square("square", 10);
@@ -23,27 +26,25 @@ public class Main {
         }
         System.out.println("____________________________________________________________________");
 
-
-         public static String createObject(String className) {
-            switch (className) {
-                case "hamster":
-                    Hamster hamster = new Hamster("Cherry", 1, "female");
-                    return hamster;
-                case "parrot":
-                    Parrot parrot = new Parrot("Lemon", 2, "yellow");
-                    return parrot;
-                case "fishes":
-                    Fish fishes = new Fish("Lily", 4, "angel fish");
-                    return fishes;
-            }
-            return null;
-        }
-
         Pet hamster = createObject("hamster");
         Pet parrot = createObject("parrot");
         Pet fishes = createObject("fishes");
         hamster.print();
         parrot.print();
         fishes.print();
+    }
+    public static Pet createObject(String className) {
+        switch (className) {
+            case "hamster":
+                Hamster hamster = new Hamster("Cherry", 1, "female");
+                return hamster;
+            case "parrot":
+                Parrot parrot = new Parrot("Lemon", 2, "yellow");
+                return parrot;
+            case "fishes":
+                Fish fishes = new Fish("Lily", 4, "angel fish");
+                return fishes;
+        }
+        return null;
     }
 }
